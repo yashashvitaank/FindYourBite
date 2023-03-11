@@ -1,0 +1,14 @@
+create database findyourbite;
+
+create table sample(
+area varchar(30),
+restaurant_name varchar(30),
+cuisine_type varchar(30),
+type boolean,
+rating double,
+contact_number varchar(12)
+);
+
+INSERT INTO sample(area,restaurant_name,cuisine_type,type,rating,contact_number)
+VALUES("Wakad","Teera","North Indian",TRUE,4.1,08686078383);
+
