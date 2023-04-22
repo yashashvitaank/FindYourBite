@@ -1,7 +1,8 @@
 <?php
 $area=$_POST['area'];
-$cusinise=$_POST['cusinise'];
 $type=$_POST['type'];
+$cusinise=$_POST['cuisine'];
+//$type=$_POST['type'];
 
 $servername = "localhost";
 $username = "root";
