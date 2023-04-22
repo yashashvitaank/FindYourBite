@@ -1,0 +1,111 @@
+*{
+    box-sizing: border-box;
+    margin: 0%;
+  }
+body{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(60deg, #abecd6 0%, #fbed96 100%);
+    position: relative;
+    font-family: Corbel;
+
+}
+header {
+  width: 100%;
+  height: 45px;
+  /* background: linear-gradient(108.9deg, rgb(163, 217, 221) 10.4%, rgb(174, 250, 182) 56.2%, rgb(238, 243, 220) 86.1%);  display: flex; */
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 2px;
+  color: white;
+  border-bottom: #629737 3px dashed;
+}
+nav {
+  width: 50%;
+  max-width: 300px;
+  height: 50px;
+}
+nav > ul {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-inline-start: 0;
+  margin-block: 0;
+  height: 100%;
+}
+
+nav > ul > li {
+  color: black;
+  margin: 0 0.2rem;
+  padding: 0.2rem;
+  display: block;
+}
+
+nav > ul > li:hover {
+  background-color: white;
+  color: #1b1b32;
+  cursor: pointer;
+}
+
+li > a {
+  color: inherit;
+  text-decoration: none;
+}
+.main{
+  margin: 150px auto;
+  background-color: white;
+}
+#rTable{
+    background-color: white;
+    width: 100%;
+    padding: 30px 10px 30px 10px;
+    color: #354d62;
+    text-align: center;
+  }
+tr, td{
+    padding: 10px;
+}
+.digits{
+  background-color: #b7d4d0;
+  margin-top: 10px;
+  color: #1972a4;
+  font-weight: lighter;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+tr:hover{
+  background-color: #e0ebeb;
+}
+th{
+  background-color: #5585b5;
+  color: white;
+  padding: 10px;
+}
+.text{
+  display: flex;
+  justify-content: center;
+ padding: 30px;
+ padding-bottom: 0%;
+  align-items: center;
+}
+a:link {
+  color:#354d62;
+}
+td{
+  font-weight: bold;
+}
+.noResult{
+height: 100px;
+width: 300px;
+background-color: #e0ebeb;
+text-align: center;
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 150px auto;
+font-weight: bold;
+  padding: 10px;
+  box-shadow: 5px 10px 18px #5585b5;
+}
