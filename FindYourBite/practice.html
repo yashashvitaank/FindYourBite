@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="practice.js"></script>
+    <link rel="stylesheet" href="practice.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <nav class="nav">
+          <div class="title">
+            <p>find your bite</p>
+          </div>
+          <ul>
+            <li class="navL"><a href="practice.html">Home</a></li>
+            <li class="navL"><a href="aboutUs.html">About Us</a></li>
+            <li class="navL"><a href="logout.php">Log Out</a></li>
+          </ul>
+        </nav>
+      </header>
+      <form id="myForm" action="resultpage.php" method="post">
+        <h1>
+          <svg
+            class="logo"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 512 512"
+          >
+            <path
+              d="M176 32c44.2 0 80 35.8 80 80v16c0 8.8-7.2 16-16 16c-44.2 0-80-35.8-80-80V48c0-8.8 7.2-16 16-16zM56 64h48c13.3 0 24 10.7 24 24s-10.7 24-24 24H56c-13.3 0-24-10.7-24-24s10.7-24 24-24zM24 136H136c13.3 0 24 10.7 24 24s-10.7 24-24 24H24c-13.3 0-24-10.7-24-24s10.7-24 24-24zm8 96c0-13.3 10.7-24 24-24h48c13.3 0 24 10.7 24 24s-10.7 24-24 24H56c-13.3 0-24-10.7-24-24zM272 48c0-8.8 7.2-16 16-16c44.2 0 80 35.8 80 80v16c0 8.8-7.2 16-16 16c-44.2 0-80-35.8-80-80V48zM400 32c44.2 0 80 35.8 80 80v16c0 8.8-7.2 16-16 16c-44.2 0-80-35.8-80-80V48c0-8.8 7.2-16 16-16zm80 160v16c0 44.2-35.8 80-80 80c-8.8 0-16-7.2-16-16V256c0-44.2 35.8-80 80-80c8.8 0 16 7.2 16 16zM352 176c8.8 0 16 7.2 16 16v16c0 44.2-35.8 80-80 80c-8.8 0-16-7.2-16-16V256c0-44.2 35.8-80 80-80zm-96 16v16c0 44.2-35.8 80-80 80c-8.8 0-16-7.2-16-16V256c0-44.2 35.8-80 80-80c8.8 0 16 7.2 16 16zM3.5 347.6C1.6 332.9 13 320 27.8 320H484.2c14.8 0 26.2 12.9 24.4 27.6C502.3 397.8 464.2 437 416 446v2c0 17.7-14.3 32-32 32H128c-17.7 0-32-14.3-32-32v-2c-48.2-9-86.3-48.2-92.5-98.4z"
+              fill="#18587a"
+            />
+          </svg>
+          Find Your Bite
+        </h1>
+        <p style="margin-bottom: 10px;">
+          Find the top rated and most popular restaurants in some of the major
+          places in <b style="margin-left: 2px;">Pune</b>
+        </p>
+        <div class="tab">
+          <div class="area">
+            <p>
+              <img src="placeholder.png" alt="location-img" class="area-img">
+              <b style=" margin-top: 25px">Select Area</b>
+            </p>
+            <select id="input" name="area">
+              <option value="select" selected disabled>Select</option>
+              <option value="Wakad">Wakad</option>
+              <option value="Kothrud">Kothrud</option>
+              <option value="FC Road">FC Road</option>
+              <option value="Koregaon Park">Koregaon Park</option>
+              <option value="Camp">Camp</option>
+              <option value="Baner">Baner</option>
+            </select>
+          </div>
+        </div>
+        <div class="tab">
+          <h3>Select Type</h3>
+          <div class="typeSelect">
+            <span class="type">
+              <img
+                src="newbroccoli.png"
+                alt="veg"
+                onclick="selectType('Veg')"
+                class="type-img"
+              />
+              <p>Veg</p>
+            </span>
+            <span class="type">
+              <img
+                src="chicken-leg.png"
+                alt="non-veg"
+                onclick="selectType('Non Veg')"
+                class="type-img"
+              />
+              <p>Non Veg</p>
+            </span>
+            <input type="hidden" value="" id="type-input" name="type" />
+          </div>
+        </div>
+        <div class="tab">
+          <h3>Select Cuisine</h3>
+          <div class="cuisine">
+            <span class="cui"
+              ><img
+                src="ramen.png"
+                onclick="selectCuisine('Chinese')"
+                class="cui-img"
+              />
+              <p>Chinese</p></span
+            >
+            <span class="cui"
+              ><img
+                src="taco.png"
+                onclick="selectCuisine('Mexican')"
+                class="cui-img"
+              />
+              <p>Mexican</p></span
+            >
+            <span class="cui"
+              ><img
+                src="samosa.png"
+                onclick="selectCuisine('North Indian')"
+                class="cui-img"
+              />
+              <p>North Indian</p></span
+            >
+            <span class="cui"
+              ><img
+                src="pizza.png"
+                onclick="selectCuisine('Italian')"
+                class="cui-img"
+              />
+              <p>Italian</p></span
+            >
+            <span class="cui"
+              ><img
+                src="masala-dosa.png"
+                onclick="selectCuisine('South Indian')"
+                class="cui-img"
+              />
+              <p>South Indian</p></span
+            >
+            <span class="cui"
+              ><img
+                src="lobster.png"
+                onclick="selectCuisine('Multi Cuisine')"
+                class="cui-img"
+              />
+              <p>Multi Cuisine</p></span
+            >
+            <input type="hidden" value="" id="cui-input" name="cuisine" />
+          </div>
+        </div>
+        <div style="width: 100%" class="btnContainer">
+          <button
+            type="button"
+            id="prevBtn"
+            class="button prev"
+            onclick="nextPrev(-1)"
+          >
+            <span>Previous</span>
+          </button>
+          <button
+            type="button"
+            id="nextBtn"
+            class="button next"
+            onclick="nextPrev(1)"
+          >
+            <span>Next</span>
+          </button>
+        </div>
+        <!-- Circles which indicates the steps of the form: -->
+        <div
+          style="text-align: center; margin-top: 40px"
+          class="step-container"
+        >
+          <span class="step"></span>
+          <span class="step"></span>
+          <span class="step"></span>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

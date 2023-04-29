@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<!-- html form to add restaurant  -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Restauant</title>
+    <link rel="stylesheet" href="addRes.css" />
+    <script src="https://kit.fontawesome.com/19461f0c8d.js" crossorigin="anonymous"></script>
+
+  </head>
+  <body>
+    <header>
+      <nav class="nav">
+        <div class="title">
+          <p>find your bite</p>
+        </div>
+        <ul>
+          <li class="navL"><a href="admintest.php">Home</a></li>
+          <li class="navL"><a href="add_restaurant.php">Add Restaurant</a></li>
+          <li class="navL"><a href="logout.php">Log Out</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="container">
+      <div class="formContainer">
+        <form method="post" action="addrestaurant.php" class="addForm">
+            <p class="text">Add a new restaurant by filling the details below for find your bite.</p>
+          <label for="area"></label>
+          <select id="area" name="area" class="area inputTag" >
+            <option value="select" selected disabled>Select Area</option>
+            <option value="Camp">Camp</option>
+            <option value="Baner">Baner</option>
+            <option value="Koregaon Park">Koregaon Park</option>
+            <option value="Kothrud">Kothrud</option>
+            <option value="FC road">FC road</option></select><br />
+          <label for="name"></label>
+          <input
+            type="text"
+            name="name"
+            placeholder="Restaurant Name"
+            class="name inputTag" 
+          /><br />
+          <label for="cusinise"></label>
+          <select id="cusinise" name="cusinise" class="cuisine inputTag" >
+            <option value="select" selected disabled>Select Cuisine</option>
+            <option value="North Indian">North Indian</option>
+            <option value="South Indian">South Indian</option>
+            <option value="Mexican">Mexican</option>
+            <option value="Italian">Italian</option>
+            <option value="Multicuisine">Multicuisine</option></select
+          ><br />
+          <div class="type">
+            <input type="radio" name="type" id="veg" value="Veg" >Veg
+            <input type="radio" name="type" id="non veg" value="Non Veg" checked>Non Veg
+          </div>
+          <br />
+          <label for="rating"></label>
+          <input
+            type="text"
+            name="rating"
+            placeholder="Enter Rating"
+            class="rating inputTag" 
+          /><br />
+          <label for="phone"></label>
+          <input
+            type="tel"
+            name="phone"
+            placeholder="Restuarant's Number (10 digits)"
+            class="number inputTag" pattern="[0-9]{10}" 
+          /><br>
+          <label for="link"></label>
+          <input
+            type="text"
+            name="map"
+            placeholder="Paste Map link here"
+            class="map inputTag" 
+          /><br />
+          <div class="buttons">
+            <input type="submit" name="submit" value="ADD" class="button" />
+            <a href="admintest.php">
+              <button class="cancel">CANCEL</button>
+            </a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

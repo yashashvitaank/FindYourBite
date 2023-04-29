@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0%;
+      }
+      .nav {
+        width: 100%;
+        height: 75px;
+        background-color: rgb(46, 46, 52);
+        line-height: 75px;
+        padding: 0 100px;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+      }
+      nav .title {
+        font-size: 30px;
+        font-weight: bold;
+        letter-spacing: 1px;
+      }
+      nav .title p {
+        float: left;
+        text-transform: uppercase;
+        color: white;
+      }
+      .nav ul {
+        float: right;
+      }
+      .nav ul li {
+        display: inline-block;
+        list-style: none;
+      }
+      .nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+        text-transform: uppercase;
+        padding: 5px 32px;
+      }
+      .navL {
+        transition: transform 0.2s;
+        -webkit-transition: transform 0.2s;
+        -moz-transition: transform 0.2s;
+        -ms-transition: transform 0.2s;
+        -o-transition: transform 0.2s;
+      }
+      .navL:hover {
+        transform: scale(1.5);
+        -webkit-transform: scale(1.5);
+        -moz-transform: scale(1.5);
+        -ms-transform: scale(1.5);
+        -o-transform: scale(1.5);
+      }
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        line-height: 2;
+        height: 100vh;
+        width: 100%;
+        max-width: 2000px;
+        background-image: url(aboutusbg.png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        position: relative;
+        font-family: Corbel;
+      }
+      .text{
+        width: 50%;
+        height: 50%;
+        font-size: 18px;
+        border-radius: 2rem;
+        color: white !important;
+      }
+      footer{
+        height: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="nav">
+        <div class="title">
+          <p>find your bite</p>
+        </div>
+        <ul>
+          <li class="navL"><a href="practice.html">Home</a></li>
+          <li class="navL"><a href="">About Us</a></li>
+          <li class="navL"><a href="logout.php">Log Out</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="container">
+      <div class="text">
+        <h2>Our Story</h2>
+        <p>
+          We are a team of food enthusiasts who believe that good food should be
+          accessible to everyone. Our restaurant recommendation system was
+          created with the goal of helping people discover new and exciting
+          dining experiences.
+        </p>
+        <h2>Our Mission</h2>
+        <p>
+          Our mission is to provide users with personalized restaurant
+          recommendations based on their preferences and previous dining
+          experiences. We strive to make the process of discovering new
+          restaurants as easy and enjoyable as possible.
+        </p>
+        <p>
+          Thank you for choosing us as your go-to source for restaurant
+          recommendations. We look forward to helping you discover your next
+          favorite dining spot.
+        </p>
+      </div>
+    </div>
+    <!-- footer section  -->
+    <footer>
+      <p>&copy; 2023 Restaurant Recommendations System. All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>
